@@ -7,6 +7,16 @@ packages:
 ignoreWorkspaceRootCheck: true
 shellEmulator: true
 
+catalog:
+  '@babel/core': ^7.23.0
+  '@babel/generator': ^7.23.0
+  '@babel/parser': ^7.23.0
+  '@babel/traverse': ^7.23.0
+  '@babel/types': ^7.23.0
+  '@types/babel__core': ^7.20.0
+  '@types/babel__generator': ^7.6.0
+  '@types/babel__traverse': ^7.20.0
+  commander: ^11.0.0
 catalogs:
   cli:
     '@antfu/eslint-config': ^5.4.1
