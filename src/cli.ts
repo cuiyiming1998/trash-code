@@ -22,6 +22,8 @@ program
   .option('--no-control-flow', '禁用控制流复杂化')
   .option('--no-strings', '禁用字符串混淆')
   .option('--no-comment', '禁用混淆注释')
+  .option('--no-spaces', '禁用在符号左右添加随机空格')
+  .option('--no-line-breaks', '禁用在行尾添加随机换行符')
   .action(async (input, options) => {
     try {
       // 解析输入文件路径
@@ -30,13 +32,14 @@ program
       // 读取输入文件
       const sourceCode = readFileSync(inputPath, 'utf-8')
 
-      console.log('options: ', options)
       // 构建混淆选项
       const obfuscationOptions: ObfuscationOptions = {
         obfuscateVariables: options.variables !== false,
         addDeadCode: options.deadCode !== false,
         obfuscateStrings: options.strings !== false,
         minify: options.minify !== false,
+        addRandomSpaces: options.spaces !== false,
+        addRandomLineBreaks: options.lineBreaks !== false,
       }
 
       // 创建混淆器并处理代码
