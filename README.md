@@ -137,29 +137,34 @@ const scores = [85, 92, 78, 96]
 ### 输出代码（混淆后）
 
 ```javascript
-function _temp2() { return false }
+function _temp2() { return false; }
 
 function hcci(d44f) {
-  let bhba5dg = 0
+  var bhba5dg = 0
 
-  for (let b9f = 0; b9f < d44f.length; b9f++) {
+
+  for (var b9f = 0; b9f < d44f.length; b9f++) {
+
     bhba5dg += d44f[b9f]
+
+
   }
 
   return bhba5dg
 }
 
 function b32(bdg2) {
-  const a7c = `\x48\x65\x6C\x6C\x6F\x2C\x20${bdg2}\x21`
+  let a7c = `\x48\x65\x6C\x6C\x6F\x2C\x20${bdg2}\x21`
 
   console.log(a7c)
 
   return a7c
 }
 
-const b552h = ['\x41\x6C\x69\x63\x65', '\x42\x6F\x62', '\x43\x68\x61\x72\x6C\x69\x65']
+let b552h = ['\x41\x6C\x69\x63\x65', '\x42\x6F\x62', '\x43\x68\x61\x72\x6C\x69\x65']
 
-const bd0213 = [85, 92, 78, 96]
+
+var bd0213 = [85, 92, 78, 96]
 ```
 
 ## 🛠️ 开发

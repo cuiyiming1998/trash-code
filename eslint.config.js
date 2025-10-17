@@ -10,6 +10,7 @@ export default antfu(
     },
     ignores: [
       'test/example*',
+      'README.md',
     ],
   },
 )
