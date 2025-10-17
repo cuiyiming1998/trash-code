@@ -1,6 +1,6 @@
-# Trash Code
+# Trash Code(WIP)
 
-一个强大的 JavaScript 代码混淆工具，将可读的代码转换为难以阅读的"垃圾代码"，同时保持功能完整性。
+将可读的代码转换为难以阅读的"垃圾代码"，同时保持功能完整性。
 
 ## ✨ 特性
 
@@ -137,7 +137,7 @@ const scores = [85, 92, 78, 96]
 ### 输出代码（混淆后）
 
 ```javascript
-function _temp2() { return false; }
+function _temp2() { return false }
 
 function hcci(d44f) {
   let bhba5dg = 0
@@ -151,11 +151,14 @@ function hcci(d44f) {
 
 function b32(bdg2) {
   const a7c = `\x48\x65\x6C\x6C\x6F\x2C\x20${bdg2}\x21`
+
   console.log(a7c)
+
   return a7c
 }
 
 const b552h = ['\x41\x6C\x69\x63\x65', '\x42\x6F\x62', '\x43\x68\x61\x72\x6C\x69\x65']
+
 const bd0213 = [85, 92, 78, 96]
 ```
 
@@ -205,25 +208,6 @@ trash-code/
 │   └── *.test.ts       # 测试文件
 └── dist/               # 构建输出
 ```
-
-## 🤝 贡献
-
-欢迎提交 Issue 和 Pull Request！
-
-1. Fork 本仓库
-2. 创建特性分支 (`git checkout -b feature/amazing-feature`)
-3. 提交更改 (`git commit -m 'Add some amazing feature'`)
-4. 推送到分支 (`git push origin feature/amazing-feature`)
-5. 开启 Pull Request
-
-## 📄 许可证
-
-本项目基于 [MIT](LICENSE.md) 许可证开源。
-
-## 🙏 致谢
-
-- [Babel](https://babeljs.io/) - 强大的 JavaScript 编译器
-- [Commander.js](https://github.com/tj/commander.js) - 命令行接口框架
 
 ---
 
